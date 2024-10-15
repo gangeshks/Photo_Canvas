@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .box {
+            flex: 1 1 calc(50% - 10px);
+            background-color: lightgray;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .box img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* For smaller devices */
+        @media (max-width: 768px) {
+            .box {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <%- include( 'Header.ejs' ) %>
+
+    <div class="container">
+        <div class="box">
+            <img src="/collarj/1.jpg" alt="Image 1">
+            <p>Container 1</p>
+        </div>
+        <div class="box">
+            <img src="/collarj/1.jpg" alt="Image 2">
+            <p>Container 2</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <img src="/collarj/1.jpg" alt="Image 3">
+            <p>Container 3</p>
+        </div>
+        <div class="box">
+            <img src="/collarj/1.jpg" alt="Image 4">
+            <p>Container 4</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <img src="/collarj/1.jpg" alt="Image 3">
+            <p>Container 3</p>
+        </div>
+        <div class="box">
+            <img src="/collarj/1.jpg" alt="Image 4">
+            <p>Container 4</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <img src="/collarj/1.jpg" alt="Image 3">
+            <p>Container 3</p>
+        </div>
+        <div class="box">
+            <img src="/collarj/1.jpg" alt="Image 4">
+            <p>Container 4</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <img src="/collarj/1.jpg" alt="Image 3">
+            <p>Container 3</p>
+        </div>
+        <div class="box">
+            <img src="/collarj/1.jpg" alt="Image 4">
+            <p>Container 4</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <img src="/collarj/1.jpg" alt="Image 3">
+            <p>Container 3</p>
+        </div>
+        <div class="box">
+            <img src="/collarj/1.jpg" alt="Image 4">
+            <p>Container 4</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <img src="/collarj/1.jpg" alt="Image 3">
+            <p>Container 3</p>
+        </div>
+        <div class="box">
+            <img src="/collarj/1.jpg" alt="Image 4">
+            <p>Container 4</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <img src="/collarj/1.jpg" alt="Image 3">
+            <p>Container 3</p>
+        </div>
+        <div class="box">
+            <img src="/collarj/1.jpg" alt="Image 4">
+            <p>Container 4</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <img src="/collarj/1.jpg" alt="Image 3">
+            <p>Container 3</p>
+        </div>
+        <div class="box">
+            <img src="/collarj/1.jpg" alt="Image 4">
+            <p>Container 4</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <img src="/collarj/1.jpg" alt="Image 3">
+            <p>Container 3</p>
+        </div>
+        <div class="box">
+            <img src="/collarj/1.jpg" alt="Image 4">
+            <p>Container 4</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <img src="/collarj/1.jpg" alt="Image 3">
+            <p>Container 3</p>
+        </div>
+        <div class="box">
+            <img src="/collarj/1.jpg" alt="Image 4">
+            <p>Container 4</p>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form | For Studio</title>
+    <!-- Link to the CSS file served from the public directory -->
+    <link rel="stylesheet" href="/style.css" type="text/css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Include the Header.ejs file -->
+    <%- include('Header.ejs') %>
+
+    <div class="flex">
+        <div class="wrapper hei">
+            <!-- Link back to Main.ejs when clicking on 'x' -->
+            <a href="/Main" class="cross">x</a>
+            <h1>Register</h1>
+            <form action="/Login" method="POST">
+                <div class="input-box">
+                    <input type="text" name="username" placeholder="  Enter Username" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+
+                <div class="input-box">
+                    <input type="email" name="email" placeholder="  Email id" required>
+                    <i class='bx bx-envelope'></i>
+                </div>
+
+                <div class="input-box">
+                    <input type="password" name="password" placeholder="  Set password" required>
+                    <i class='bx bxs-lock'></i>
+                </div>
+
+                <div class="remember-forget">
+                    <label><input type="checkbox" name="remember"> Remember me</label>
+                </div>
+
+                <button type="submit" class="btw">Register</button>
+            </form>
+
+            <div class="register-link">
+                <p>Already have an account? <a href="/Login">Login</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

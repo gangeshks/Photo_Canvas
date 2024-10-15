@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- CSS file served from the public directory -->
+    <link rel="stylesheet" href="/style.css" type="text/css">
+</head>
+<body>
+
+    <!-- Include the header -->
+    <%- include('Header.ejs') %>
+
+    <!-- Advertisement Style Slideshow -->
+    <div class="ad-slideshow-container">
+        <!-- Slideshow Images -->
+        <div class="mySlides fade">
+            <!-- Image paths should be relative to the public folder -->
+            <img src="/Gifts item/WhatsApp Image 2024-10-06 at 18.33.33_4c777f12.jpg" alt="Ad Image 1" class="ad-slide-image">
+        </div>
+        <div class="mySlides fade">
+            <img src="/Gifts item/New folder/a.jpg" alt="Ad Image 2" class="ad-slide-image">
+        </div>
+        <div class="mySlides fade">
+            <img src="/Gifts item/New folder/b.jpg" alt="Ad Image 3" class="ad-slide-image">
+        </div>
+
+        <!-- Navigation buttons with transparent circles -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Dots for current slide indicator -->
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+    </div>
+    <%- include('FestivalGifts.ejs') %>
+    <%- include('Container_two_box.ejs') %>
+
+
+    <!-- Include the JavaScript file -->
+    <script src="/script.js"></script>
+</body>
+</html>

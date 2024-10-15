@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift</title>
+    <link rel="stylesheet" href="/style.css"> <!-- Path starts from the public folder -->
+</head>
+<body>
+    <%- include('Header') %>
+
+    <!-- Cup Section -->
+    <section id="cup-section">
+        <h2>Cup</h2>
+        <div class="container">
+            <div class="item">
+                <img src="/Gifts item/cup/1.jpg" alt="Cup 1">
+                <p>Cup 1</p>
+            </div>
+            <div class="item">
+                <img src="/Gifts item/cup/2.jpg" alt="Cup 2">
+                <p>Cup 2</p>
+            </div>
+            <div class="item">
+                <img src="/Gifts item/cup/3.jpg" alt="Cup 3">
+                <p>Cup 3</p>
+            </div>
+            <div class="item">
+                <img src="/Gifts item/cup/4.jpg" alt="Cup 4">
+                <p>Cup 4</p>
+            </div>
+            <div class="item hidden">
+                <img src="/Gifts item/cup/6.jpg" alt="Cup 5">
+                <p>Cup 5</p>
+            </div>
+            <div class="item hidden">
+                <img src="/Gifts item/cup/5.jpg" alt="Cup 6">
+                <p>Cup 6</p>
+            </div>
+        </div>
+        <button class="see-more-btn" onclick="toggleItems('cup-section')">See More</button>
+    </section>
+
+    <!-- Back Cover Section -->
+    <section id="tshirt-section">
+        <h2>Back Cover</h2>
+        <div class="container">
+            <div class="item">
+                <img src="/Gifts item/cover/1.jpg" alt="T-shirt 1">
+                <p>T-shirt 1</p>
+            </div>
+            <div class="item">
+                <img src="/Gifts item/cover/2.jpg" alt="T-shirt 2">
+                <p>T-shirt 2</p>
+            </div>
+            <div class="item">
+                <img src="/Gifts item/cover/3.png" alt="T-shirt 3">
+                <p>T-shirt 3</p>
+            </div>
+            <div class="item">
+                <img src="/Gifts item/cover/4.jpg" alt="T-shirt 4">
+                <p>T-shirt 4</p>
+            </div>
+            <div class="item hidden">
+                <img src="/Gifts item/cover/5.jpg" alt="T-shirt 5">
+                <p>T-shirt 5</p>
+            </div>
+            <div class="item hidden">
+                <img src="/Gifts item/cover/6.jpg" alt="T-shirt 6">
+                <p>T-shirt 6</p>
+            </div>
+        </div>
+        <button class="see-more-btn" onclick="toggleItems('tshirt-section')">See More</button>
+    </section>
+
+    <!-- Pillow Cover Section -->
+    <section id="tshirt-section">
+        <h2>Pillow Cover</h2>
+        <div class="container">
+            <div class="item">
+                <img src="/Gifts item/pillow/1.jpg" alt="T-shirt 1">
+                <p>T-shirt 1</p>
+            </div>
+            <div class="item">
+                <img src="/Gifts item/pillow/2.jpg" alt="T-shirt 2">
+                <p>T-shirt 2</p>
+            </div>
+            <div class="item">
+                <img src="/Gifts item/pillow/3.jpg" alt="T-shirt 3">
+                <p>T-shirt 3</p>
+            </div>
+            <div class="item hidden">
+                <img src="/Gifts item/19.jpg" alt="T-shirt 5">
+                <p>T-shirt 5</p>
+            </div>
+        </div>
+        <button class="see-more-btn" onclick="toggleItems('tshirt-section')">See More</button>
+    </section>
+
+    <!-- Other Sections -->
+    <!-- Add more sections as needed following the same structure -->
+
+    <script>
+        // Function to toggle visibility of hidden items
+        function toggleItems(sectionId) {
+            const section = document.getElementById(sectionId);
+            const hiddenItems = section.querySelectorAll('.hidden');
+            hiddenItems.forEach(item => {
+                item.classList.toggle('hidden');
+            });
+            // Change button text based on visibility
+            const btn = section.querySelector('.see-more-btn');
+            if (btn.innerText === 'See More') {
+                btn.innerText = 'See Less';
+            } else {
+                btn.innerText = 'See More';
+            }
+        }
+    </script>
+</body>
+</html>

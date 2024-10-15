@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form | For Studio</title>
+    <!-- Corrected the path to public stylesheets -->
+    <link rel="stylesheet" href="/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Include Header.ejs -->
+    <%- include('Header.ejs') %>
+
+    <div class="flex">
+        <div class="wrapper log">
+            <!-- Link to Main.ejs page -->
+            <a href="/Main" class="cross">x</a>
+            <h1>Login Page</h1>
+            <form action="/Login" method="POST">
+                <div class="input-box">
+                    <input type="text" name="username" placeholder="    Username" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+
+                <div class="input-box">
+                    <input type="password" name="password" placeholder="   Password" required>
+                    <i class='bx bxs-lock'></i>
+                </div>
+
+                <div class="remember-forget">
+                    <label><input type="checkbox" name="remember">Remember me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="btw">Login</button>
+            </form>
+
+            <div class="register-link">
+                <p>Don't have an account? <a href="/Register">Register</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

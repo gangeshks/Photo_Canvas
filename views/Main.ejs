@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main | Pages</title>
+    <!-- Update the path to load the CSS from the public folder -->
+    <link rel="stylesheet" href="/style.css">  
+</head>
+<body>
+
+    <!-- Include Header.ejs -->
+    <%- include('Header.ejs') %>
+
+    <div class="flex">
+        <div class="body1">
+            <div class="wrapper w2">
+
+                <!-- Link to the route for Register -->
+                <div class="input-box">
+                    <a href="/register"><button type="submit" class="sign">Sign In</button></a>
+                </div>
+
+                <!-- Link to the route for Login -->
+                <div class="input-box">
+                    <a href="/login"><button type="submit" class="sign">Login</button></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    // JavaScript to load the Header.ejs content if needed
+    fetch('/header')
+      .then(response => response.text())
+      .then(data => document.getElementById('header').innerHTML = data);
+</script>
+</html>

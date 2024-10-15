@@ -1,0 +1,381 @@
+
+body{
+    min-height: 100vh;
+    background-color: #333;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(2px);
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+                                    /* Navbar Decoration */
+header {      
+    background: #333;     
+    padding: 10px 0;
+}
+.navbar{
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    border-radius: 25px;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+.navbar li{
+    float: left;
+    margin: 16px 15px;
+    list-style: none;
+}
+.navbar ul{
+    overflow: auto;
+}
+.search{
+    padding: 12px 40px;
+    float: right;
+    color: #fff;
+}
+.navbar input{
+    padding: 4px 4px;
+    border-radius: 20px;
+    border-color: rgb(31, 30, 30);
+}
+.navbar li a:hover{
+    color: red;
+}
+
+                                    /* Main formate  Decoration */
+.body1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.wrapper{
+    width: 400px;
+    background:transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(6px);
+    color: #fff;
+    border-radius: 12px;
+    padding: 20px 50px;
+} 
+
+.wrapper .input-box{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 35px;
+    margin: 30px 0;
+}
+.w2{
+    margin-top: 50px;
+    padding: 70px;
+}
+.sign{
+    width: 200px;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px black ;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+.sign:hover{
+    background-color: aqua;
+}
+
+
+/* register page && login page */ 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.cross {
+    color: #fff;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    text-decoration: solid;
+    padding: 4px 9px;
+    border-radius: 50%;
+}
+.cross:hover{
+    color: red;
+    background-color: rgb(59, 57, 57);
+}
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 40px 20px 20px;
+}
+.input-box input::placeholder{
+    color: #fff;
+}
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    transform: translate(-50%);
+    font-size: 20px;
+}
+.remember-forget{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: 15px 0 15px;
+}
+.remember-forget label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+.remember-forget a{
+    color: #fff;
+    text-decoration: none;
+}
+.remember-forget a:hover{
+    text-decoration: underline;
+}
+.btw{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px black ;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+.register-link{
+    font-size: 14.5px;
+    margin: 20px 0 15px;
+    text-align: center;
+}
+.register-link p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.register-link p a:hover{
+    text-decoration: underline;
+}
+
+
+   /* ---------------------HEADER--------------- */
+iframe{
+    width:100%;
+    height: 60px;
+    border: none;
+}
+
+/* ------------          Gift Page--------------------*/
+
+.hidden {
+    display: none;
+}
+
+/* Container for items */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.item {
+    width: 23%; /* 4 items per row on large screens */
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.item p {
+    margin: 10px 0 0;
+    font-weight: bold;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+/* See More Button */
+.see-more-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.see-more-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Media Query for Tablets */
+@media (max-width: 768px) {
+    .item {
+        width: 48%; /* 2 items per row on medium screens */
+    }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    .item {
+        width: 100%; /* 1 item per row on small screens */
+    }
+}
+h2{
+    color: rgb(250, 255, 230);
+    margin-left: 25px;
+}
+
+
+
+/*--------------------------Home Page----------------------------------*/ 
+/* Advertisement slideshow container */
+.ad-slideshow-container {
+    position: relative;
+    max-width: 850px; /* Set the width for the ad banner */
+    height: 350px; /* Height for the ad banner */
+    margin: auto;
+    border-radius: 15px; /* Rounded corners */
+    border: 2px solid rgba(224, 240, 10, 0.1); /* Light border around the ad */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for a floating effect */
+}
+
+/* Ad slideshow images */
+.ad-slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px; /* Ensure the images follow the rounded corners of the container */
+}
+
+/* Fade animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from { opacity: 0.4 }
+    to { opacity: 1 }
+}
+
+/* Navigation buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+    user-select: none;
+    transition: background-color 0.6s ease;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* The dots/circles indicator */
+.dots-container {
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .ad-slideshow-container {
+        max-width: 100%;
+        height: 250px;
+    }
+
+    .prev, .next {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .dot {
+        height: 10px;
+        width: 10px;
+    }
+}
